@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",()=>{let e=document.querySelector(".slider__wrapper"),t=document.querySelectorAll(".slider__image"),r=t.length,d=0,n=()=>t[0].offsetWidth,l=t=>{let r=n();e.style.transform=`translateX(${-t*r}px)`};document.querySelector(".slider__icon--left").addEventListener("click",()=>{l(d=d>0?d-1:r-1)}),document.querySelector(".slider__icon--right").addEventListener("click",()=>{l(d=d<r-1?d+1:0)}),window.addEventListener("resize",()=>{l(d)}),l(d)});
+//# sourceMappingURL=index.c41ecbec.js.map
